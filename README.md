@@ -33,9 +33,15 @@
 
 ## Установка
 
-1. Скачайте последнюю версию установщика из раздела [Releases](https://github.com/yourusername/SecureNote/releases)
+### Вариант 1: Установщик (рекомендуется)
+1. Скачайте `SecureNote-Setup.exe ` из раздела [Releases](https://github.com/snofine/SecureNote/releases)
 2. Запустите установщик и следуйте инструкциям
-3. После установки запустите SecureNote из меню Пуск или с рабочего стола
+3. Программа будет установлена в Program Files и добавлена в меню Пуск
+
+### Вариант 2: Портативная версия
+1. Скачайте `SecureNote-Portable.zip` из раздела [Releases](https://github.com/snofine/SecureNote/releases)
+2. Распакуйте архив в любую папку
+3. Запустите `SecureNote.exe`
 
 ## Сборка из исходного кода
 
