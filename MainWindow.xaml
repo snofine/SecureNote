@@ -1,0 +1,24 @@
+<Window x:Class="SecureNote.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:SecureNote"
+        Title="Безопасный блокнот" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Новый" Click="NewFile_Click"/>
+                <MenuItem Header="Открыть..." Click="OpenFile_Click"/>
+                <MenuItem Header="Сохранить как..." Click="SaveFile_Click"/>
+                <Separator/>
+                <MenuItem Header="Выход" Click="Exit_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <TextBox x:Name="NoteTextBox"
+                 Margin="10"
+                 AcceptsReturn="True"
+                 TextWrapping="Wrap"
+                 VerticalScrollBarVisibility="Auto"/>
+    </DockPanel>
+</Window> 

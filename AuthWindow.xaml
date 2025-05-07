@@ -1,0 +1,39 @@
+<Window x:Class="SecureNote.AuthWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Авторизация" Height="250" Width="400"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Grid Margin="20">
+        <StackPanel>
+            <TextBlock Text="Безопасный блокнот" 
+                       FontSize="24" 
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,20"/>
+            
+            <TextBlock Text="Пароль:" Margin="0,0,0,5"/>
+            <PasswordBox x:Name="PasswordBox" 
+                        Margin="0,0,0,15" 
+                        PasswordChar="*"/>
+
+            <StackPanel Orientation="Horizontal" 
+                        HorizontalAlignment="Center" 
+                        Margin="0,10">
+                <Button x:Name="LoginButton" 
+                        Content="Войти" 
+                        Width="100" 
+                        Margin="0,0,10,0"
+                        Click="LoginButton_Click"/>
+                <Button x:Name="RegisterButton" 
+                        Content="Регистрация" 
+                        Width="100"
+                        Click="RegisterButton_Click"/>
+            </StackPanel>
+
+            <TextBlock x:Name="StatusText" 
+                       Foreground="Red" 
+                       HorizontalAlignment="Center" 
+                       Margin="0,10"/>
+        </StackPanel>
+    </Grid>
+</Window> 
